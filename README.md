@@ -1,43 +1,71 @@
+## Support
 
-macOS 和 Linux 版本在此发布：
-
-支持
-
+- Windows 7 and higher
 - macOS High Sierra 10.13 and higher
 - Debian 9 (Stretch) and higher
 - Ubuntu 16.04 and higher
 - Fedora 30 and higher
 
+## Windows
+
+Download the latest .zip package
 
 ## macOS
-下载最新的.dmg包，双击安装即可。
+
+Download the latest .dmg package and double-click to install it.
 
 
 ## Linux
-下载最新的压缩包，然后
 
-- 解压压缩包：`tar -zxvf KA-1.1.7.2-linux-x64.tar.gz`
-- 设置语言环境（或略此步骤可能导致软件启动报错）：`export LANG=en_US.UTF-8`
-- 运行：`./KA-1.1.7.2-linux-x64/KafkaAssistant`
+Download the latest tarball, then
 
-## 常见问题
+- Decompress the compressed package: `tar -zxvf KA-1.1.7.2-linux-x64.tar.gz`
+- Set the language environment (or omit this step may cause the software to start an error): `export LANG=en_US.UTF-8`
+- Run: `./KA-1.1.7.2-linux-x64/KafkaAssistant`
 
-- 关于Mac版本**安装时**报错：“已损坏，无法打开。 您应该将推出磁盘映像”，是因为当前版本未进行签名，被Mac GateKeeper机制拦截。通过以下步骤来暂时关闭Getakeeper（安装后再打开）：
+## Common Problem
 
-    1. 在“系统偏好设置” -> “安全与隐私” 中选择 “任何来源”；如果您的系统没有此选项，在终端中执行以下命令后再次打开此设置页，然后勾选“任何来源”：`sudo spctl --master-disable`
-    1. 双击安装 Kafka Assistant 即可。
+- An error was reported about the installation of the Mac version: "It is damaged and cannot be opened. You should launch the disk image", because the current version is not signed and is blocked by the Mac GateKeeper mechanism. Temporarily disable Getkeeper (after installing it) by following these steps:
 
-    1. 安装完成之后，您应该还原之前的设置，这会保护您的Mac免受恶意软件的骚扰，通过以下命令打开 Getakeeper：`sudo spctl --master-enable`
+    1. Select "Any Source" in "System Preferences" -> "Security and Privacy"; if your system does not have this option, execute the following command in the terminal and open this setting page again, then check "Any Source" : `sudo spctl --master-disable`
 
----
+    1. Double-click to install Kafka Assistant.
 
-- 关于Mac版本**运行时**报错：“已损坏，无法打开。 您应该将它移到废纸篓”，是因为当前版本未进行签名，被Mac GateKeeper机制拦截；打开终端输入以下命令来解除对 Kafka Assistant 的隔离：`sudo xattr -rd com.apple.quarantine /Applications/Kafka\ Assistant.app`
+    1. After the installation is complete, you should restore the previous settings. This will protect your Mac from malware. Open Getkeeper with the following command: `sudo spctl --master-enable`
 
 ---
 
-- 关于Mac/Linux版本**运行时**奔溃（黑苹果出现过此现象），请检查`$HOME/.local/share` 目录是否存在，如果不存在，请手动建立后再次打开Kafka Assistant。`$HOME/.local/share` 是存储用户特定数据文件的基本目录。关于此目录的更多介绍与规范，请查看：https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html
+- When running the Mac version, an error is reported: "It is damaged and cannot be opened. You should move it to the trash", because the current version is not signed and is blocked by the Mac GateKeeper mechanism; open the terminal and enter the following command to unblock Kafka Assistant Quarantine: `sudo xattr -rd com.apple.quarantine /Applications/Kafka\ Assistant.app`
 
 ---
 
-- 关于Linux版本打开时报错：“Unhandled exception. System.InvalidOperationException: Default font family name can't be null or empty.”，需要在运行前设置语言环境：`export LANG=en_US.UTF-8`
-，然后再次运行：`./KA-1.1.7.2-linux-x64/KafkaAssistant`
+- Regarding the Mac/Linux version crashing when running, please check whether the `$HOME/.local/share` directory exists. If it does not exist, please create it manually and open Kafka Assistant again. `$HOME/.local/share` is the base directory where user-specific data files are stored. For more introduction and specifications of this catalog, please check: https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html
+
+---
+
+- When opening the Linux version, an error is reported: "Unhandled exception. System.InvalidOperationException: Default font family name can't be null or empty." You need to set the locale before running: `export LANG=en_US.UTF-8`
+, and then run again: `./KA-1.1.7.2-linux-x64/KafkaAssistant`
+
+
+
+## Screenshot of software running
+
+### macOS
+
+![](./screenshot/mac/1.png)
+![](./screenshot/mac/2.png)
+![](./screenshot/mac/3.png)
+![](./screenshot/mac/4.png)
+![](./screenshot/mac/5.png)
+![](./screenshot/mac/6.png)
+![](./screenshot/mac/7.png)
+
+### Linux
+
+![](./screenshot/linux/1.png)
+![](./screenshot/linux/2.png)
+![](./screenshot/linux/3.png)
+![](./screenshot/linux/4.png)
+![](./screenshot/linux/5.png)
+![](./screenshot/linux/6.png)
+![](./screenshot/linux/7.png)
