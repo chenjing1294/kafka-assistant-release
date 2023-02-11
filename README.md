@@ -42,26 +42,3 @@ Download the latest tarball, then
 - When opening the Linux version, an error is reported: "Unhandled exception. System.InvalidOperationException: Default font family name can't be null or empty." You need to set the locale before running: `export LANG=en_US.UTF-8`
 , and then run again: `./KA-1.1.7.2-linux-x64/KafkaAssistant`
 
-
-
-## Screenshot of software running
-
-### macOS
-
-![](./screenshot/mac/1.png)
-![](./screenshot/mac/2.png)
-![](./screenshot/mac/3.png)
-![](./screenshot/mac/4.png)
-![](./screenshot/mac/5.png)
-![](./screenshot/mac/6.png)
-![](./screenshot/mac/7.png)
-
-### Linux
-
-![](./screenshot/linux/1.png)
-![](./screenshot/linux/2.png)
-![](./screenshot/linux/3.png)
-![](./screenshot/linux/4.png)
-![](./screenshot/linux/5.png)
-![](./screenshot/linux/6.png)
-![](./screenshot/linux/7.png)
